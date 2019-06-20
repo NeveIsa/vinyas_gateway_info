@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 gwd.local | SUCCESS => {
     "changed": false, 
     "ping": "pong"
@@ -31,3 +32,5 @@ gwh.local | SUCCESS => {
     "changed": false, 
     "ping": "pong"
 }
+=======
+>>>>>>> 0ce1e7be04d75beb52b79b0f098592dce98957c2
