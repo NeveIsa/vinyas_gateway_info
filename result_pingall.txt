@@ -1,0 +1,33 @@
+gwd.local | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+gwa.local | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+gwb.local | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+gwe.local | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh: Could not resolve hostname gwe.local: Name or service not known\r\n", 
+    "unreachable": true
+}
+gwc.local | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+gwg.local | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+gwi.local | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+gwh.local | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
