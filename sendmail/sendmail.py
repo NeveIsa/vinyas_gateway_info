@@ -4,11 +4,18 @@ import os
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
 
+
+
 def notify(emailID):
+    gws_down=open('gwDown.txt').read().strip()
+    if len(gws_down)==0:
+        print("No gateway is down.")
+        return
+
     message = Mail(
         from_email='vinyas-automan@rbccps.org',
         to_emails= emailID,
-        subject='GATEWAYS-DOWN: ' + open('gwDown.txt').read(),
+        subject='GATEWAYS-DOWN: ' + gws_down ,
         html_content='<strong>GATEWAYS ARE DOWN !!!</strong>')
     try:
         sg = SendGridAPIClient(os.environ.get('SENDGRID_API_KEY'))

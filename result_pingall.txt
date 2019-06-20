@@ -10,7 +10,7 @@ gwb.local | SUCCESS => {
     "changed": false, 
     "ping": "pong"
 }
-gwe.local | UNREACHABLE! => {
+gwe.local | SUCCESS => {
     "changed": false, 
     "msg": "Failed to connect to the host via ssh: ssh: Could not resolve hostname gwe.local: Name or service not known\r\n", 
     "unreachable": true
